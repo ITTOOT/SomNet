@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
+    <PackageReference Include="FSharp.Core" Version="7.0.0" />
+    <PackageReference Include="MathNet.Numerics" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Stats\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\tblHistorical20k.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FChartingOne\FChartingOne.fsproj" />
+  </ItemGroup>
+
+</Project>
